@@ -123,9 +123,9 @@ function App() {
                 University in 2020 with aspirations of becoming a Software
                 Developer. I constantly seek discomfort and am always pushing to
                 better myself in all aspects of life. My knack for problem
-                solving and fascination with technology have led me to computer
+                solving and fascination with technology has led me to computer
                 programming. When I'm not writing code, I enjoy spending time
-                getting active. I like to be out on the water surfing,
+                being active. I like to be out on the water surfing,
                 wakeboarding, or even just swimming. When I'm not on the water,
                 I love to practice brazilian jiu-jitsu and hope to compete one
                 day. Einstein said it best:{" "}
