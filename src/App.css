@@ -378,3 +378,68 @@ textarea {
   font-size: 0.9em;
   line-height: 1.5em;
 }
+
+@media only screen and (max-width: 900px) {
+  .aboutMe {
+    max-width: 93%;
+  }
+
+  .aboutMe > p {
+    width: 100%;
+  }
+
+  #portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .work-content > div {
+    max-width: 80%;
+    padding-top: 20px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-content > div > p,
+  .app-name {
+    max-width: 95%;
+    margin-left: 15px;
+  }
+
+  #portfolio > div > img {
+    width: 93%;
+    height: 250px;
+    max-width: 93%;
+    max-height: 250px;
+  }
+
+  .skills {
+    width: 93%;
+  }
+
+  .contact {
+    width: 80%;
+  }
+
+  form > label {
+    font-size: 1em;
+  }
+  form > input {
+    height: 25px;
+  }
+
+  textarea {
+    height: 70px;
+  }
+}
