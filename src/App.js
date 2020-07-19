@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
-import { useForm } from "react-hook-form";
 import "./App.css";
 
 function App() {
@@ -26,11 +25,11 @@ function App() {
       .then(
         (result) => {
           setStatus("Sent!");
-          console.log(result.text);
+          // console.log(result.text);
         },
         (error) => {
           setStatus("Sorry - Try Again");
-          console.log(error.text);
+          // console.log(error.text);
         }
       );
   };
@@ -60,7 +59,7 @@ function App() {
           }
         >
           <div className="logo">
-            <img src={require("./logoS.png")} alt="logo" />
+            <img src={require("./images/logoS.png")} alt="logo" />
           </div>
           <div
             style={{
@@ -114,7 +113,7 @@ function App() {
             <div className="aboutMe">
               <h2>About Me</h2>
               <img
-                src={require("./tie.jpeg")}
+                src={require("./images/tie.jpeg")}
                 alt="profile pic"
                 id="profilePic"
               />
@@ -142,14 +141,15 @@ function App() {
                 </li>
                 <li>
                   <span id="skills">Front End: </span>React, jQuery, HTML5/CSS3,
-                  Bootstrap
+                  Bootstrap, JSON, SASS/SCSS
                 </li>
                 <li>
-                  <span id="skills">Back End: </span>NodeJS, SQL, MySQL, MongoDB
+                  <span id="skills">Back End: </span>NodeJS, SQL, MySQL,
+                  MongoDB, GraphQL
                 </li>
                 <li>
                   <span id="skills">Other Skills | Tools: </span>Git, AWS,
-                  OAuth, npm
+                  OAuth, npm, WordPress
                 </li>
               </ul>
             </div>
@@ -158,7 +158,7 @@ function App() {
             <h2>Work</h2>
             <div className="work-content">
               <img
-                src={require("./grill-time-screenshot.png")}
+                src={require("./images/grill-time-screenshot.png")}
                 alt="grill-time-app"
               />
               <div>
@@ -175,7 +175,7 @@ function App() {
                 <div className="work-link-images">
                   <img
                     className="source-code"
-                    src={require("./source-code.png")}
+                    src={require("./images/source-code.png")}
                     alt="git-source-code"
                     onClick={() =>
                       window.open(
@@ -193,7 +193,7 @@ function App() {
                         "_blank"
                       )
                     }
-                    src={require("./work-link.png")}
+                    src={require("./images/work-link.png")}
                   />
                 </div>
               </div>
@@ -217,21 +217,21 @@ function App() {
           <div className="links">
             <div>
               <img
-                src={require("./git.png")}
+                src={require("./images/git.png")}
                 alt="github"
                 onClick={() =>
                   window.open("https://github.com/teg1776", "_blank")
                 }
               />
               <img
-                src={require("./linkedin.png")}
+                src={require("./images/linkedin.png")}
                 alt="linkedin"
                 onClick={() =>
                   window.open("https://www.linkedin.com/in/teg1776/", "_blank")
                 }
               />
               <img
-                src={require("./insta.png")}
+                src={require("./images/insta.png")}
                 alt="instagram"
                 onClick={() =>
                   window.open(
@@ -241,7 +241,7 @@ function App() {
                 }
               />
               <img
-                src={require("./youtube.png")}
+                src={require("./images/youtube.png")}
                 alt="youtube"
                 onClick={() =>
                   window.open(

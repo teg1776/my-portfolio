@@ -9,7 +9,7 @@
 }
 
 .jumbotron {
-  background-image: url("./ocean.jpg");
+  background-image: url("./images/ocean.jpg");
   background-position-y: top;
   background-size: cover;
   max-width: 100vw;
