@@ -113,6 +113,7 @@
   top: 0px;
   width: 100%;
   display: flex;
+  z-index: 1;
   height: 60px;
   align-items: center;
   justify-content: space-evenly;
@@ -308,19 +309,21 @@ textarea {
   width: 100%;
 }
 
-#portfolio > div > img {
+.work-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  /* margin-left: 250px; */
+  margin: 0 auto;
+  align-items: center;
+  width: 70%;
+}
+
+.work-image {
   width: 410px;
   height: 280px;
   max-width: 410px;
   max-height: 280px;
-}
-
-.work-content {
-  display: flex;
-  /* width: 100%; */
-  /* margin-left: 250px; */
-  margin: 0 auto;
-  width: 70%;
 }
 
 .work-content > div {
@@ -360,11 +363,12 @@ textarea {
 
 .work-link {
   cursor: pointer;
+  z-index: 0;
   /* background: blue; */
   height: 30px;
   width: 30px;
   padding: 0;
-  margin-left: 5px;
+  margin-left: 0.5em;
   transform: scale(1);
   transition: transform 0.5s ease;
 }
@@ -377,6 +381,7 @@ textarea {
 .work-content > div > p {
   font-size: 0.9em;
   line-height: 1.5em;
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -421,11 +426,15 @@ textarea {
     margin-left: 15px;
   }
 
-  #portfolio > div > img {
-    width: 93%;
-    height: 250px;
-    max-width: 93%;
-    max-height: 250px;
+  .work-link-images {
+    margin-left: 0.5em;
+  }
+
+  .work-image {
+    width: 410px;
+    height: 280px;
+    max-width: 410px;
+    max-height: 280px;
   }
 
   .skills {

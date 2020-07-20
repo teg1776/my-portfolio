@@ -158,6 +158,7 @@ function App() {
             <h2>Work</h2>
             <div className="work-content">
               <img
+                className="work-image"
                 src={require("./images/grill-time-screenshot.png")}
                 alt="grill-time-app"
               />
@@ -197,6 +198,34 @@ function App() {
                   />
                 </div>
               </div>
+              <br />
+              <img
+                src={require("./images/bgg.png")}
+                alt="bgg"
+                className="work-image"
+              />
+              <div>
+                <span className="app-name">Beyond Goals Gym</span>
+                <p>
+                  A fully responsive website created for a local gym. Designed
+                  and developed by me. All media was provided by BGG.
+                </p>
+                <p>
+                  <span className="tech-used">Technologies used:</span>{" "}
+                  WordPress
+                </p>
+                <div className="work-link-images" style={{ marginTop: ".5em" }}>
+                  <img
+                    className="work-link"
+                    alt="work-link"
+                    onClick={() =>
+                      window.open("http://beyondgoalsgym.com/", "_blank")
+                    }
+                    src={require("./images/work-link.png")}
+                  />
+                </div>
+              </div>
+              <br />
             </div>
           </div>
           <div className="contact" id="contact">
