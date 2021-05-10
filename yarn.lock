@@ -9888,7 +9888,7 @@
   dependencies:
     "figgy-pudding" "^3.5.1"
 
-"ssri@^7.0.0":
+"ssri@^7.0.0", "ssri@^7.1.0":
   "integrity" "sha512-77/WrDZUWocK0mvA5NTRQyveUf+wsrIc6vyrxpS8tVvYBcX215QbafrJR3KtkpskIzoFLqqNuuYQvxaMjXJ/0g=="
   "resolved" "https://registry.npmjs.org/ssri/-/ssri-7.1.0.tgz"
   "version" "7.1.0"
