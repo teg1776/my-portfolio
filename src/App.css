@@ -319,29 +319,37 @@ textarea {
   width: 70%;
 }
 
-.work-image {
+.gif {
+  height: 350px;
+}
+
+/* .work-image {
   width: 410px;
   height: 280px;
   max-width: 410px;
   max-height: 280px;
-}
+} */
 
 .work-content > div {
-  padding-left: 20px;
-  text-align: left;
   color: #212529;
-  /* line-height: 1.4em; */
   max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app-name {
-  font-size: 1.4rem;
+  font-size: 24px;
   letter-spacing: 0.5px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 500;
 }
 
 .work-link-images {
   display: flex;
   align-items: center;
+  margin-bottom: 25px;
   /* background: green; */
 }
 
@@ -423,12 +431,11 @@ textarea {
   .work-content > div > p,
   .app-name {
     max-width: 95%;
-    margin-left: 15px;
   }
 
-  .work-link-images {
+  /* .work-link-images {
     margin-left: 0.5em;
-  }
+  } */
 
   .work-image {
     width: 410px;

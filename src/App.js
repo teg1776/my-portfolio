@@ -158,12 +158,45 @@ function App() {
             <h2>Work</h2>
             <div className="work-content">
               <img
-                className="work-image"
-                src={require("./images/grill-time-screenshot.png")}
-                alt="grill-time-app"
+                src={require("./images/mobilePS.gif")}
+                alt="pricingscan-gif"
+                className="gif"
               />
               <div>
-                <span className="app-name">Grill Time Calculator</span>
+                <span className="app-name">-PricingScan-</span>
+
+                <p>
+                  A fully responsive web app that provides Amazon Sellers with
+                  an analytical sales dashboard as well as features that allow
+                  for: automated custom emails, creating authorized account
+                  users, and product catalog management.
+                </p>
+                <p>
+                  <span className="tech-used">Technologies used:</span>{" "}
+                  JavaScript(ES6), React (w/ Hooks), CSS3, Flexbox & Grid, git,
+                  firebase
+                </p>
+                <div className="work-link-images">
+                  <img
+                    className="work-link"
+                    alt="work-link"
+                    onClick={() =>
+                      window.open(
+                        "app.pricingscan.com",
+                        "_blank"
+                      )
+                    }
+                    src={require("./images/work-link.png")}
+                  />
+                </div>
+              </div>
+              <img
+                src={require("./images/mobileGrillTime.gif")}
+                alt="grill-time-gif"
+                className="gif"
+              />
+              <div>
+                <span className="app-name">-Grill Time Calculator-</span>
                 <p>
                   A fully responsive web app that calculates estimated grilling
                   time based on user input such as type of meat, size, and
@@ -199,7 +232,8 @@ function App() {
                 </div>
               </div>
               <br />
-              <img
+
+              {/* <img
                 src={require("./images/bgg.png")}
                 alt="bgg"
                 className="work-image"
@@ -224,7 +258,7 @@ function App() {
                     src={require("./images/work-link.png")}
                   />
                 </div>
-              </div>
+              </div> */}
               <br />
             </div>
           </div>
